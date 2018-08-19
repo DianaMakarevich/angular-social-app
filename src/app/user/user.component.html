@@ -1,0 +1,18 @@
+<div class="col s12 m3">
+  <div
+    [ngClass]="{'marked' : isMarked}"
+    class="card">
+    <div class="card-image">
+      <img src="{{user.image}}">
+      <span class="card-title">{{ user.name | uppercase }}</span>
+    </div>
+    <div class="card-content">
+      {{user.geo}}
+    </div>
+    <div class="card-action">
+      <a
+        (click)="onClick()"
+        class="waves-effect waves-light btn">Check user</a>
+    </div>
+  </div>
+</div>
